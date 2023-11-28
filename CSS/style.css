@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header p {
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 1px 1px 2px black;
+}
+
+h2 {
+    color: rgb(0, 179, 255);
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+main p {
+    text-align: left;
+}
+
+img {
+    width: 200px;
+    height: 60px;
+    margin-left: 10%;
+}
+
+nav img {
+    background-color: rgb(0, 179, 255);
+    cursor: pointer;
+}
+
+nav {
+    background-color: rgb(0, 179, 255);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+nav ul {
+    padding-inline: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: flex-end;
+
+
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li button {
+    border: none;
+    padding: 0;
+    white-space: nowrap;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px;
+
+}
+
+.dropdown-content a {
+    color: black;
+    
+}
+
+/* ul li .dropdown {
+    display: none;
+}
+
+ul li:hover .dropdown {
+    display: block;
+
+    position: absolute;
+    padding: 10px;
+}
+
+ul li:hover .dropdown li {
+    display: block;
+} */
+
+.jumbotron {
+    font-size: 20px;
+    padding: 40px;
+    background-color: rgb(0, 179, 255);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.982);
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.container div {
+    width: 300px;
+    height: 350px;
+    margin: 2px;
+    text-align: center;
+    font-weight: bold;
+    padding-right: 25px;
+    cursor: pointer;
+
+
+}
+
+.produk img {
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    justify-content: center;
+
+}
+
+button {
+    background-color: rgb(0, 179, 255);
+    border-radius: 10px;
+    color: white;
+    border: white 3px solid;
+    padding: 12px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+button:hover {
+    color: #fff;
+    font-weight: bold;
+
+}
+
+aside p {
+    text-align: center;
+}
+
+figure img {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: rgb(0, 179, 255);
+    text-shadow: 1px 1px 1px black;
+
+}
+
+
+
+footer {
+    padding: 20px 5px 5px 5px;
+    color: white;
+    background-color: rgb(0, 179, 255);
+    text-align: center;
+    font-weight: bold;
+}
+
+.social-media-icon {
+    padding: 5px;
+    background: white;
+    color: rgb(0, 179, 255);
+    border-radius: 4px;
+    margin-inline: 10px;
+}
+
+a.social-media-icon:hover {
+    background: #fff !important;
+    color: #222 !important;
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+
+    nav img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
